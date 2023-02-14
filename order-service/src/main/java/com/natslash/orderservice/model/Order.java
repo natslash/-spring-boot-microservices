@@ -15,13 +15,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="t_orders")
+@Table(name = "t_orders")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Order {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

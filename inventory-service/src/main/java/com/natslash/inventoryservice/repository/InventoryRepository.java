@@ -1,11 +1,11 @@
 package com.natslash.inventoryservice.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
 import com.natslash.inventoryservice.model.Inventory;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
+import java.util.List;
+
 public interface InventoryRepository extends JpaRepository<Inventory, Long> {
     Inventory findBySkuCode(String skuCode);
+    List<Inventory> findBySkuCodeIn(List<String> skuCode);
 }

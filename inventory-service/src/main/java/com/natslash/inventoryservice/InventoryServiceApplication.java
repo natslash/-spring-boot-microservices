@@ -1,12 +1,11 @@
 package com.natslash.inventoryservice;
 
+import com.natslash.inventoryservice.model.Inventory;
+import com.natslash.inventoryservice.repository.InventoryRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import com.natslash.inventoryservice.model.Inventory;
-import com.natslash.inventoryservice.repository.InventoryRepository;
 
 @SpringBootApplication
 public class InventoryServiceApplication {
